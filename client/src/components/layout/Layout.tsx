@@ -1,15 +1,15 @@
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 
-interface LayoutProps {
-  children: React.ReactNode;
-}
+import { Outlet } from "react-router-dom";
 
-const Layout: React.FC<LayoutProps> = ({ children }) => {
+const Layout: React.FC = () => {
   return (
     <div>
       <Navbar />
-      {children}
+      <div className="py-24">
+        <Outlet />
+      </div>
       <Footer />
     </div>
   );
