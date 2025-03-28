@@ -6,18 +6,18 @@ const Footer = () => {
       <div className="w-10/12 md:w-3/5 mx-auto flex items-center justify-between">
         <div className="flex flex-col gap-1">
           <Link to={"/"}>Home</Link>
-          <Link to={""}>About</Link>
-          <Link to={""}>My Resources</Link>
+          <Link to={"/about-me"}>About</Link>
+          <Link to={"/my-resources"}>My Resources</Link>
         </div>
         <div className="flex flex-col gap-1">
-          <Link to={""}>LinkedIn</Link>
-          <Link to={""}>Twitter</Link>
-          <Link to={""}>Github</Link>
+          <Link to={"https://www.linkedin.com/in/akshat-gangi-b457a61ab/"} target={"_blank"}>LinkedIn</Link>
+          <Link to={"/my-portfolio"} target={"blank"}>Twitter</Link>
+          <Link to={"https://github.com/Zero-max-ai"} target={"blank"}>Github</Link>
         </div>
         <div className="flex flex-col gap-1">
-          <Link to={""}>Portfolio</Link>
-          <Link to={""}>My Stack</Link>
-          <Link to={""}>Buy me a coffee</Link>
+          <Link to={"/my-portfolio"}>Portfolio</Link>
+          <Link to={"/my-stack"}>My Stack</Link>
+          <Link to={"/buy-me-coffe"}>Buy me a coffee</Link>
         </div>
       </div>
     </footer>
